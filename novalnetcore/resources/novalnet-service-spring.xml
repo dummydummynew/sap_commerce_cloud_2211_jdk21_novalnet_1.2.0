@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="novalnetTransactionService"
+		class="com.novalnet.service.payment.impl.DefaultNovalnetTransactionService" />
+
+	<bean id="novalnetPaymentHandlerService"
+		class="com.novalnet.service.payment.impl.DefaultNovalnetPaymentHandlerService" />
+
+	<bean id="novalnetPaymentService"
+		class="com.novalnet.service.payment.impl.DefaultNovalnetPaymentService" />
+
+	<bean id="novalnetApiService"
+		class="com.novalnet.service.http.impl.DefaultNovalnetApiService" />
+
+	<bean id="novalnetOrderService"
+		class="com.novalnet.service.order.impl.DefaultNovalnetOrderService" />
+
+	<bean id="novalnetTransactionBookingService"
+		class="com.novalnet.service.payment.impl.DefaultNovalnetTransactionBookingService" />
+
+	<bean id="novalnetCallbackService"
+		class="com.novalnet.service.payment.impl.DefaultNovalnetCallbackService" />
+
+	<bean id="novalnetCallbackOrderService"
+		class="com.novalnet.service.order.impl.DefaultNovalnetCallbackOrderService" />
+
+	<bean id="novalnetCheckoutService"
+		class="com.novalnet.service.checkout.impl.DefaultNovalnetCheckoutService"
+		parent="defaultAcceleratorCheckoutFacade" />
+
+	<bean id="novalnetPaymentMethodService"
+		class="com.novalnet.service.payment.impl.DefaultNovalnetPaymentMethodService" />
+
+	<bean id="novalnetEndpointConfigService"
+		class="com.novalnet.service.payment.impl.DefaultNovalnetEndpointConfigService">
+	</bean>
+
+	<bean id="novalnetWebhookService"
+		class="com.novalnet.service.payment.impl.DefaultNovalnetWebhookService" />
+	
+</beans>

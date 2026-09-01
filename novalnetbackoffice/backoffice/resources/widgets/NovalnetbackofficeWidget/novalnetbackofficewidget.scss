@@ -1,0 +1,13 @@
+@charset "utf-8";
+@import "./support/novalnetbackofficewidget-variables.scss";
+
+.yw-labelstyle
+{
+	color: $novalnetbackoffice-label-text-color;
+}
+
+.novalnetbackoffice-container {
+	background: $novalnetbackoffice-container-background;
+	font-family: $novalnetbackoffice-container-font-family;
+	font-size: $novalnetbackoffice-container-font-size;
+}

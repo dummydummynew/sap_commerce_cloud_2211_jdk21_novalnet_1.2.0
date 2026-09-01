@@ -1,0 +1,11 @@
+#Ant properties
+#Tue May 05 16:53:37 CEST 2026
+builddate=20260505 1652
+description=novalnetcore
+group.id=de.hybris.platform
+module.name=platform-module
+name=novalnetcore
+releasedate=20260311 0828
+vendor=hybris
+version=2211-jdk21.11
+version.api=2211-jdk21
